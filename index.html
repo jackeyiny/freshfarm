@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Farm</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo/logo-small.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="./javaScript/jquery-3.6.0.min (1).js"></script>
+    <script src="./javaScript/bootstrap.min.js"></script>
+    <script src="./javaScript/modal.js"></script>
+    <script src="./javaScript/script.js"> </script>
+    
+    
+
+</head>
+<body>
+    <div class="main">
+        <!-- Begin Header -->
+        <div class="header">
+            <!-- begin top header -->
+            <div class="top-header"> 
+                <ul class="header-tool-left">
+                    <li><a href="">
+                        <i class="header-icon fas fa-map-marker-alt"></i>
+                        Cửa hàng
+                    </a></li>
+                    <li><a href="">
+                        <i class="header-icon fas fa-headset"></i>
+                        Hotline
+                    </a></li>
+                </ul>
+
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./img/logo/logo-small.png" alt="Logo img"><a href="#"></a>
+                    </a>
+                </div> 
+
+                <ul class="header-tool-right">
+                    <li>
+                        <a href="DK.html">ĐĂNG KÝ</a>
+                        <a href="DN.html"> / ĐĂNG NHẬP</a>
+                    </li>
+                    <li><a href="FormUser.html">
+                        <i class="icon-tool-right fas fa-user-alt"></i>
+                    </a></li>
+                    <li><a href="">
+                        <i class="icon-tool-right fas fa-shopping-cart"></i>
+                    </a></li>
+                </ul> 
+            </div>
+            <!-- begin header nav -->
+            <div class="nav">
+                <ul class="header-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="Rauhuuco.html">Rau hữu cơ</a></li>
+                    <li><a href="cuqua.html">Củ quả</a></li>
+                    <li><a href="traicay.html">Trái cây</a></li>
+                    <li><a href="Hangnhapkhau.html">Hàng nhập khẩu</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+
+                     <!-- Thanh tìm kiếm -->
+                    <div class="header-search">
+                        <input type="text" id="myInput" class="header-search-input" placeholder="Tìm kiếm nhanh" title="Tìm kiếm nhanh">
+
+                        <button type="submit" class="header-search-btn" title="Tìm kiếm">
+                            <i class="header-search-icon fas fa-search"></i>
+                        </button>
+                        <ul id="myUL">
+                            <li><a href="#caithia">Cải Thìa</a></li>
+                            <li><a href="#bo">Bơ</a></li>
+                            <li><a href="#HBR">Hành boa rô</a></li>
+                            <li><a href="#NM">Nấm mỡ</a></li>
+                            <li><a href="#NDC">Nấm đông cô</a></li>
+                            <li><a href="#RM">Rau muống</a></li>
+                        </ul>
+                    </div>
+                </ul>
+               
+            </div>
+        </div>
+
+        <!-- Begin slider -->
+        <div class="slideshow-container">
+            <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+             <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <img src="./img/slider/anh2.jpg" style="width:100%">
+               <div class="text"></div>
+             </div>
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <img src="./img/slider/anh1.jpg" style="width:100%">
+               <div class="text"></div>
+             </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="./img/slider/anh6.jpg" style="width:100%">
+               <div class="text"></div>
+            </div>
+            <!-- Nút điều khiển mũi tên-->
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+             <a class="next" onclick="plusSlides(1)">❯</a>
+           </div>
+           <br>
+        <!-- Begin content -->
+        <div class="content">
+            <div class="row">
+            <!-- Phần Sản phẩm sale -->
+                <div class="col col-half col-sale">
+                    <div class="row sale-ad">
+                        <img src="./img/iconkhuyenmai.jpg" alt="Sale Advertise" class="sale-ad-img">
+                    </div>
+                    <div class="row sale-product" id="caithia">
+                        <img src="./img/Rau (2)/Rau/cải thìa.jpg" alt="Sale Product" class="sale-img" id="btn177">
+                        <p class="product-name">Cải Thìa</p>
+                        <p class="price">20.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my177" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CẢI THÌA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau (2)/Rau/cải thìa.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="row sale-product" id="bo">
+                        <img src="./img/Trái Cây/bơ.jpg" alt="Sale Product" class="sale-img" id="btn178">
+                        <p class="product-name">Bơ</p>
+                        <p class="price">50.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my178" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>BƠ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây/bơ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Phần sản phẩm bán chạy -->
+                <p class="title-best-sellers">Best Sellers</p>
+                <div class="col col-half col-product">
+                    <!-- Hàng 1 -->
+                    <div class="row product">
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái Cây/cam.jpg" alt="Sale Product" class="product-img" id="btn1" >
+                            <p class="product-name">Cam</p>
+                            <p class="price">80.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my1" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>CAM</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái Cây/cam.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái Cây/chuối.jpg" alt="Sale Product" class="product-img" id="btn2">
+                            <p class="product-name">Chuối</p>
+                            <p class="price">25.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my2" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>CHUỐI</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái Cây/chuối.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái Cây/vải.jpg" alt="Sale Product" class="product-img" id="btn3">
+                            <p class="product-name">Vải</p>
+                            <p class="price">40.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my3" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>VẢI</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái Cây/vải.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái Cây/mận.jpg" alt="Sale Product" class="product-img" id="btn4">
+                            <p class="product-name">Mận</p>
+                            <p class="price">20.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my4" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>MẬN</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái Cây/mận.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- Hàng 2 -->
+                    <div class="row product">
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Rau/cải xoắn.jpg" alt="Sale Product" class="product-img" id="btn5">
+                            <p class="product-name">Cải xoắn</p>
+                            <p class="price">20.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my5" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>CẢI XOẮN</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Rau/cải xoắn.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Rau/cải xà lách.jpg" alt="Sale Product" class="product-img" id="btn6">
+                            <p class="product-name">Xà lách</p>
+                            <p class="price">25.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my6" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>XÀ LÁCH</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Rau/cải xà lách.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Rau/nấm đùi gà.jpg" alt="Sale Product" class="product-img" id="btn7">
+                            <p class="product-name">Nấm đùi gà</p>
+                            <p class="price">140.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my7" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>NẤM ĐÙI GÀ</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Rau/nấm đùi gà.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Rau/nấm bào ngư.jpg" alt="Sale Product" class="product-img" id="btn8">
+                            <p class="product-name">Nấm bào ngư</p>
+                            <p class="price">50.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my8" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>NẤM BÀO NGƯ</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Rau/nấm bào ngư.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- Hàng 3 -->
+                    <div class="row product">
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái cây nhập khẩu/cherry.jpg" alt="Sale Product" class="product-img" id="btn9">
+                            <p class="product-name">Cherry</p>
+                            <p class="price">550.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my9" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>CHERRY</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái cây nhập khẩu/cherry.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái cây nhập khẩu/dâu tây.jpg" alt="Sale Product" class="product-img" id="btn10">
+                            <p class="product-name">Dâu Tây</p>
+                            <p class="price">250.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my10" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>DÂU TÂY</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái cây nhập khẩu/dâu tây.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái cây nhập khẩu/kiwwi.jpg" alt="Sale Product" class="product-img" id="btn11">
+                            <p class="product-name">Kiwi</p>
+                            <p class="price">220.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my11" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>KIWI</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái cây nhập khẩu/kiwwi.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col col-fourth col-product-detail">
+                            <img src="./img/Trái cây nhập khẩu/mận Hàn Quốc.jpg" alt="Sale Product" class="product-img" id="btn12">
+                            <p class="product-name">Mận Hàn Quốc</p>
+                            <p class="price">320.000đ/kg</p>
+                        </div>
+                        <div class="modal fade" role="dialog" id="my12" ><!-- còn id này là để show nha bà con -->
+                            <div class="modal-dialog" style="margin-top:10px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>MẬN HÀN QUỐC</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                            <div class="sp">
+                                                <img src="./img/Trái cây nhập khẩu/mận Hàn Quốc.jpg" alt="" >
+                                            </div>
+                                            
+                                            Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                            <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Phần Rau hữu cơ -->
+            <p class="title">Rau Hữu Cơ</p>
+            <div class="col col-full col-product-group">
+                <div class="row product">
+                    <div class="col col-fifth col-product-group" id="HBR">
+                        <img src="./img/Rau/hành Boa ro.jpg" alt="Sale Product" class="product-group-img" id="btn13">
+                        <p class="product-name">Hành Boa rô</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my13" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>HÀNH BOA RÔ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/hành Boa ro.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group" id="NM">
+                        <img src="./img/Rau/nấm mỡ.jpg" alt="Sale Product" class="product-group-img" id="btn14">
+                        <p class="product-name">Nấm mỡ</p>
+                        <p class="price">280.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my14" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NẤM MỠ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/nấm mỡ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group" id="NDC">
+                        <img src="./img/Rau/nấm đông cô.jpg" alt="Sale Product" class="product-group-img" id="btn15">
+                        <p class="product-name">Nấm Đông Cô</p>
+                        <p class="price">400.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my15" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NẤM ĐÔNG CÔ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group" id="RM">
+                        <img src="./img/Rau/rau muống.jpg" alt="Sale Product" class="product-group-img" id="btn16">
+                        <p class="product-name">Rau muống</p>
+                        <p class="price">10.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my16" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>RAU MUỐNG</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/rau muống.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/súp lơ xanh.jpg" alt="Sale Product" class="product-group-img" id="btn17">
+                        <p class="product-name">Súp lơ xanh</p>
+                        <p class="price">45.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my17" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>SÚP LƠ XANH</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/súp lơ xanh.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/Cải Thảo.jpg" alt="Sale Product" class="product-group-img" id="btn18">
+                        <p class="product-name">Cải thảo</p>
+                        <p class="price">25.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my18" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CẢI THẢO</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/Cải Thảo.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/Dưa chuột.jpg" alt="Sale Product" class="product-group-img" id="btn19">
+                        <p class="product-name">Dưa chuột</p>
+                        <p class="price">20.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my19" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>DƯA CHUỘT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/Dưa chuột.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/bí đỏ.jpg" alt="Sale Product" class="product-group-img" id="btn20">
+                        <p class="product-name">Bí đỏ</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my20" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>BÍ ĐỎ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/bí đỏ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/Khổ qua.jpg" alt="Sale Product" class="product-group-img" id="btn21">
+                        <p class="product-name">Khổ qua</p>
+                        <p class="price">30.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my21" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>KHỔ QUA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/Khổ qua.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Rau/đậu cô ve.jpg" alt="Sale Product" class="product-group-img" id="btn22">
+                        <p class="product-name">Đậu cô ve</p>
+                        <p class="price">35.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my22" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>ĐẬU CÔ VE</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Rau/đậu cô ve.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Nút xem tất cả -> link tới trang sản phẩm -->
+                <div class="row show">
+                    <a href="Rauhuuco.html">
+                        <button class="show-all">XEM TẤT CẢ</button>
+                    </a>
+                </div>
+            </div>
+            <br><hr><br>
+
+            <!-- Phần Củ quả -->
+            <p class="title">Củ quả</p>
+            <div class="col col-full col-product-group">
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/cà rốt.jpg" alt="Sale Product" class="product-group-img" id="btn23">
+                        <p class="product-name">Cà Rốt</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my23" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CÀ RỐT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/cà rốt.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/củ dền.jpg" alt="Sale Product" class="product-group-img" id="btn24">
+                        <p class="product-name">Củ Dền</p>
+                        <p class="price">30.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my24" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CỦ DỀN</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/củ dền.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/gừng.jpg" alt="Sale Product" class="product-group-img" id="btn25">
+                        <p class="product-name">Gừng</p>
+                        <p class="price">25.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my25" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>GỪNG</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/gừng.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/hành tây.jpg" alt="Sale Product" class="product-group-img" id="btn26">
+                        <p class="product-name">Hành Tây</p>
+                        <p class="price">50.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my26" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>HÀNH TÂY</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/hành tây.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/hành tím.jpg" alt="Sale Product" class="product-group-img" id="btn27">
+                        <p class="product-name">Hành tím </p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my27" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>HÀNH TÍM</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/hành tím.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/khoai lang tím.jpg" alt="Sale Product" class="product-group-img" id="btn28">
+                        <p class="product-name">Khoai lang tím Nhật</p>
+                        <p class="price">12.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my28" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>KHOAI LANG TÍM NHẬT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây/chuối.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/khoai mật.jpg" alt="Sale Product" class="product-group-img" id="btn29">
+                        <p class="product-name">Khoai mật</p>
+                        <p class="price">35.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my29" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>KHOAI MẬT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/khoai mật.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/khoai tây.jpg" alt="Sale Product" class="product-group-img" id="btn30">
+                        <p class="product-name">Khoai Tây</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my30" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>KHOAI TÂY</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/khoai tây.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/nghệ.jpg" alt="Sale Product" class="product-group-img" id="btn31">
+                        <p class="product-name">Nghệ</p>
+                        <p class="price">30.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my31" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NGHỆ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/nghệ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Củ/tỏi.jpg" alt="Sale Product" class="product-group-img" id="btn32">
+                        <p class="product-name">Tỏi</p>
+                        <p class="price">35.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my32" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>TỎI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Củ/tỏi.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Nút xem tất cả -> link tới trang sản phẩm -->
+                <div class="row show">
+                    <a href="cuqua.html">
+                        <button class="show-all">XEM TẤT CẢ</button>
+                    </a>
+                </div>
+            </div>
+            <br><hr><br>
+
+            <!-- Phần Trái Cây -->
+            <p class="title">Trái Cây</p>
+            <div class="col col-full col-product-group">
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây/bưởi.jpg" alt="Sale Product" class="product-group-img" id="btn33">
+                        <p class="product-name">Bưởi</p>
+                        <p class="price">60.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my33" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>BƯỞI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây/bưởi.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây/chanh.jpg" alt="Sale Product" class="product-group-img" id="btn34">
+                        <p class="product-name">Chanh vàng</p>
+                        <p class="price">65.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my34" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CHANH VÀNG</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây/chanh.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/chôm chôm.jpg" alt="Sale Product" class="product-group-img" id="btn35">
+                        <p class="product-name">Chôm chôm</p>
+                        <p class="price">28.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my35" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CHÔM CHÔM</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/chôm chôm.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/măng cụt.jpg" alt="Sale Product" class="product-group-img" id="btn36">
+                        <p class="product-name">Măng cụt</p>
+                        <p class="price">65.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my36" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>MĂNG CỤT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/măng cụt.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/cà chua.jpg" alt="Sale Product" class="product-group-img" id="bt37">
+                        <p class="product-name">Cà chua</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my37" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>CÀ CHUA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/cà chua.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/nhãn.jpg" alt="Sale Product" class="product-group-img" id="btn38">
+                        <p class="product-name">Nhãn</p>
+                        <p class="price">35.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my38" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NHÃN</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/nhãn.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/sầu riêng.jpg" alt="Sale Product" class="product-group-img" id="btn39">
+                        <p class="product-name">Sầu Riêng</p>
+                        <p class="price">90.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my39" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>SẦU RIÊNG</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/sầu riêng.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/thơm.jpg" alt="Sale Product" class="product-group-img" id="btn40">
+                        <p class="product-name">Thơm</p>
+                        <p class="price">40.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my40" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>THƠM</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/thơm.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/ổi.jpg" alt="Sale Product" class="product-group-img" id="btn41">
+                        <p class="product-name">Ổi</p>
+                        <p class="price">20.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my41" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>ỔI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/ổi.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái Cây (2)/Trái Cây/xoài.jpg" alt="Sale Product" class="product-group-img" id="btn42">
+                        <p class="product-name">Xoài</p>
+                        <p class="price">30.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my42" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>XOÀI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái Cây (2)/Trái Cây/xoài.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Nút xem tất cả -> link tới trang sản phẩm -->
+                <div class="row show">
+                    <a href="traicay.html">
+                        <button class="show-all">XEM TẤT CẢ</button>
+                    </a>
+                </div>
+            </div>
+            <br><hr><br>
+            <!-- Phần Hàng nhập khẩu -->
+            <p class="title">Hàng nhập Khẩu</p>
+            <div class="col col-full col-product-group">
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/dưa lưới.jpg" alt="Sale Product" class="product-group-img" id="btn43">
+                        <p class="product-name">Dưa lưới </p>
+                        <p class="price">100.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my43" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>DƯA LƯỚI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/dưa lưới.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/lê nam phi.jpg" alt="Sale Product" class="product-group-img" id="btn44">
+                        <p class="product-name">Lê Nam Phi</p>
+                        <p class="price">75.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my44" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>LÊ NAM PHI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/lê nam phi.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/mâm xôi đỏ.jpg" alt="Sale Product" class="product-group-img" id="btn45">
+                        <p class="product-name">Mâm xôi đỏ</p>
+                        <p class="price">450.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my45" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>MÂM XÔI</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/mâm xôi đỏ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/mân xôi đen.jpg" alt="Sale Product" class="product-group-img" id="btn46">
+                        <p class="product-name">Mâm xôi đen</p>
+                        <p class="price">900.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my46" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>MÂM XÔI ĐEN</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/mân xôi đen.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/nho móng tay.jpg" alt="Sale Product" class="product-group-img" id="btn47">
+                        <p class="product-name">Nho móng tay</p>
+                        <p class="price">290.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my47" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NHO MÓNG TAY</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/nho móng tay.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/nho.jpg" alt="Sale Product" class="product-group-img" id="btn48">
+                        <p class="product-name">Nho đen</p>
+                        <p class="price">200.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my48" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>NHO ĐEN</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/nho.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/quả Việt Quất.jpg" alt="Sale Product" class="product-group-img" id="btn49">
+                        <p class="product-name">Việt Quất</p>
+                        <p class="price">600.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my49" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>VIỆT QUẤT</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/quả Việt Quất.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/táo mỹ xanh.jpg" alt="Sale Product" class="product-group-img" id="btn50">
+                        <p class="product-name">Táo Mỹ xanh</p>
+                        <p class="price">140.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my50" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>TÁO MỸ XANH</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/táo mỹ xanh.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/táo mỹ đỏ.jpg" alt="Sale Product" class="product-group-img" id="btn51">
+                        <p class="product-name">Táo Mỹ đỏ</p>
+                        <p class="price">20.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my51" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>TÁO MỸ ĐỎ</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/táo mỹ đỏ.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-fifth col-product-group">
+                        <img src="./img/Trái cây nhập khẩu/đào.jpg" alt="Sale Product" class="product-group-img" id="btn52">
+                        <p class="product-name">Đào </p>
+                        <p class="price">320.000đ/kg</p>
+                    </div>
+                    <div class="modal fade" role="dialog" id="my52" ><!-- còn id này là để show nha bà con -->
+                        <div class="modal-dialog" style="margin-top:10px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2>ĐÀO</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form" class="form-horizontal" style="margin: top 10px;margin-right: 10px;" action="">
+                                        <div class="sp">
+                                            <img src="./img/Trái cây nhập khẩu/đào.jpg" alt="" >
+                                        </div>
+                                        
+                                        Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới.
+                                        <!-- còn ở đây là phần thân nha, ảnh r mô tả giá cả -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Nút xem tất cả -> link tới trang sản phẩm -->
+                <div class="row show">
+                    <a href="Hangnhapkhau.html">
+                        <button class="show-all">XEM TẤT CẢ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin footer -->
+        <div class="footer">
+            <div class="col col-full col-footer">
+                <div class="row">
+                    <div class="col col-fourth">
+                        <div class="row title-footer">
+                            Thông tin chung
+                        </div>
+                        <div class="row content-footer">
+                            Khoa Công nghệ thông tin
+                        </div>
+                        <div class="row content-footer">
+                            Giảng viên: Từ Thị Xuân Hiền
+                        </div>
+                        <div class="row content-footer">
+                            Hệ thống công nghệ web
+                        </div>
+                    </div>
+
+                    <div class="col col-fourth">
+                        <div class="row title-footer">
+                            Thành viên
+                        </div>
+                        <div class="row content-footer">
+                            Tô Thùy Trang
+                        </div>
+                        <div class="row content-footer">
+                            Nguyễn Thị Yến Loan
+                        </div>
+                        <div class="row content-footer">
+                            Trần Thị Hải Đăng
+                        </div>
+                        <div class="row content-footer">
+                            Đỗ Hữu Thượng
+                        </div>
+                        <div class="row content-footer">
+                            Nguyễn Khả Minh
+                        </div>
+                    </div>
+
+                    <div class="col col-fourth">
+                        <div class="row title-footer">
+                            Mã số sinh viên
+                        </div>
+                        <div class="row content-footer">
+                            20016571
+                        </div>
+                        <div class="row content-footer">
+                            20016741
+                        </div>
+                        <div class="row content-footer">
+                            20018821
+                        </div>
+                        <div class="row content-footer">
+                            20012345
+                        </div>
+                        <div class="row content-footer">
+                            16039991
+                        </div>
+                    </div>
+
+                    <div class="col col-fourth">
+                        <div class="row title-footer">
+                            Follow Us
+                        </div>
+                        <div class="row footer-icon">
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="row footer-icon">
+                            <a href="">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./javaScript/search.js"></script>
+</html>
