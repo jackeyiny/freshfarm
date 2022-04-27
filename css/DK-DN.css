@@ -1,0 +1,136 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 120%;
+}
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-sign-in,
+#form-sign-up {
+    max-width: 600px;
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(207, 204, 204, 0.8);
+    margin-top: 100px;
+}
+.form-heading .logo-img {
+    width: 250px;
+    height: 70px;
+    position: relative;
+    left: 25%;
+    margin-bottom: 50px;
+}
+.choice {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .choice1 {
+    font-weight: 400;
+    border-bottom: 5px solid #6ECB63;
+    cursor: pointer;
+}
+
+.switch-choice {
+    font-weight: 400;
+    color: #999;
+    cursor: pointer;
+} */
+
+.choice1,
+.choice2 {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* .choice a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+.choice li a:active {
+    text-decoration: 4px underline #6ECB63;
+    color: #000;
+} */
+
+
+
+
+
+
+.form-group {
+    border-bottom: 2px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #333;
+    flex-grow: 1;
+    line-height: 1.4;
+    font-size: 20px;
+}
+.form-input::placeholder {
+    color: #999;
+}
+.form-submit,
+.form-button {
+    background-color:#6ECB63;
+    border: 3px solid #6ECB63;
+    border-radius: 7px;
+    color: #fff;
+    width: 100%;
+    line-height: 1.4;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.form-submit:hover,
+.form-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.form-group .icon {
+    font-size: 20px;
+    color: #6ECB63;
+    padding-right: 6px;
+}
+.form-footer {
+    display: flex;
+}
+.forgot-pw, .help{
+    display: inline-block;
+    margin: 20px 73px;
+}
+.forgot-pw a, 
+.help a{
+    color: #333;
+    text-decoration: none;
+}
+.text-danger{
+    color:red;
+}
+
+
+/* test */
+

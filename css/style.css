@@ -1,0 +1,418 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 120%;
+}
+
+.main {
+    max-width:fit-content
+}
+
+/* CSS phần header */
+.header {
+    /* width: 1422px; */
+    height: 110px;
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: linear-gradient(0, #F2FFE9 , #6ECB63);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* làm nổi phần header lên trên slider */
+    z-index: 1; 
+}
+
+.top-header {
+    /* width: 1422px; */
+    height: 60px;
+    display: block;
+}
+
+.header-tool-left,
+.header-tool-right {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+}
+
+.header-tool-left {
+    left: 1.5%;
+}
+
+.header-tool-right {
+    right: 40px 
+}
+
+.header-tool-left li,
+.header-tool-right li,
+.header-menu li  {
+    display: inline-block; 
+    position: relative;
+}
+
+.header-menu li {
+    padding-right: 4%;
+}
+
+.header-tool-left li a,
+.header-tool-right li a,
+.header-menu li a {
+    line-height: 370%;
+    text-decoration: none;
+    display:inline-block;
+    /* padding: 0 24px; */
+    color: #444941;
+}
+
+.header-tool-right li a {
+    padding:0;
+}
+
+.header-icon {
+    padding-right: 8px;
+}
+
+.header-logo {
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+}
+
+.logo-img {
+    width: 130%;
+    height: 58px;
+}
+
+.icon-tool-right {
+    padding:0 5px;
+}
+
+.nav {
+    display: block;
+}
+
+.header-menu {
+    margin: 0 -18px;
+}
+
+.header-menu li a{
+    /* padding: 0 42px; */
+    text-transform: uppercase;
+}
+
+.header-menu li a:hover, .header-menu li a:active {
+    text-decoration:underline 5px #6ECB63;
+} 
+
+.header-tool-left li a:hover,
+.header-tool-right li a:hover {
+    color: #fff;
+}
+
+.header-search {
+    margin-top: 15px;
+}
+
+.header-search,
+.header-search-input {
+    height: 36px;
+    width: 21%;
+    background-color: rgba(239, 239, 239, 0.8);
+    border-radius: 30px;
+    float: right;
+}
+
+.header-search-input {
+    width: 77%;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    font-style: italic;
+    float: left;
+    margin-left: 5%;
+}
+
+.header-search-btn {
+    background-color: rgba(239, 239, 239, 0.8);
+    border: none;
+    height: 36px;
+    display: inline-block;
+    margin: 0 3%;
+    cursor: pointer;
+}
+
+.header-search-icon {
+    float: right;
+   
+}
+
+/* CSS phần slider */
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    top: 50%;
+    margin-top: 110px;
+  
+ }
+/* ẩn hình ảnh cho phần tử slideshow 
+ .mySlides {
+   display: none;
+ }*/
+/* thiết kế nút mũi tên*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   /* font-size: 18px; */
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+/* thiết kế nút mũi tên next nằm phía bên phải */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+ .text {
+   color: #f2f2f2;
+   /* font-size: 15px; */
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+/* Thiết lập style cho số hiển thị của phần tử */
+ .numbertext {
+   color: #f2f2f2;
+   /* font-size: 12px; */
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+.active, .dot:hover {
+   background-color: #717171;
+ }
+/* tạo hiệu ứng chuyển động fade */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+@-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+/* CSS phần content */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+
+.col-fourth {
+    width: calc(100% / 4);
+}
+
+.col-fifth {
+    width: calc(100% / 5);
+}
+
+.col-sale {
+    width: 25%;
+    background-color: rgb(204, 204, 204, 0.3);
+    height: auto;
+}
+
+.product {
+    margin: 2% 0;
+}
+
+.col-product {
+    width: 75%;
+}
+
+.col-product-detail:hover,
+.col-product-group:hover {
+    border: 5px solid #fff;
+}
+
+.product-img {
+    width: 98%;
+}
+
+.sale-ad {
+
+}
+
+.sale-product:hover {
+    border: 1px solid black;
+}
+
+.sale-ad-img {
+    width: 100%;
+    height: 350px;
+}
+
+.sale-img {
+    width: 80%;
+    margin: 10% 10% 0 10%
+}
+
+.product-name {
+    /* font-size: 26px; */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.price {
+    /* font-size: 26px; */
+    line-height: 1.6;
+    color: #6ECB63;
+    text-align: center;
+}
+
+.title-best-sellers {
+    /* font-size: 34px; */
+    font-size: 170%;
+    line-height: 1.6;
+    color: #6ECB63;
+    margin: 0% 26%;
+    text-transform: uppercase;
+}
+
+.title {
+    /* font-size: 34px; */
+    font-size: 170%;
+    line-height: 1.6;
+    color: #6ECB63;
+    margin: 0% 3%;
+    text-transform: uppercase;
+}
+
+.product-group-img {
+    width: 100%;
+}
+
+.show {
+    margin-bottom: 40px;
+}
+
+.show-all {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 10px 0 5px 0;
+    letter-spacing: 2px;
+    font-size: 95%;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+
+/* CSS phần footer */
+.footer {
+    
+}
+
+.col-footer{
+    height: auto;
+    background-color: rgb(204, 204, 204, 0.3);
+    padding-left: 15%;
+}
+
+.title-footer {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-icon {
+    font-size: 130%;
+}
+
+
+
+ 
+
+  #myUL {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin-top: 2;
+    border-radius: 5px;
+    background-color: rgb(243, 241, 241);
+  }
+
+  #myUL li a {
+    border: 0px;
+    margin-top: -1px; 
+    
+    
+    padding: 5px 100px 5px 100px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    text-transform: none;
+    
+  }
+
+  #myUL li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+  }
+  
+ 
+  
